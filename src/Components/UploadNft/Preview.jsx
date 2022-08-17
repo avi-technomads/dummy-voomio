@@ -139,7 +139,7 @@ const Preview = () => {
 
    ]
 
-   
+
    const [openModal, setOpenModal] = useState(false);
 
    return (
@@ -158,16 +158,26 @@ const Preview = () => {
                      </div>
                   </div>
                   <div className="flex items-center gap-10">
-                     <div>
+                     <div className="opacity-50 flex flex-col justify-center items-center">
                         <img src="/images/upload.svg" alt="" />
+                        <p className="text-[#6549F6]  text-lg  itemcount ">Upload</p>
                      </div>
                      <div className='flex flex-col justify-center items-center'>
                         <img src="/images/EyeOutline.svg" alt="" />
+                        <p className="text-[#6549F6]  text-lg  itemcount ">Preview</p>
                         <img src="/images/path.svg" alt="" />
                      </div>
 
-                     <img src="/images/CogOutline.svg" alt="" />
-                     <img src="/images/star.png" alt="" />
+                     <div className="flex flex-col items-center">
+                        <img src="/images/CogOutline.svg" alt="" className="opacity-50" />
+                        <p className="text-[#6549F6]  text-lg  itemcount opacity-50">Manage</p>
+                     </div>
+                     <div className="flex flex-col items-center">
+                        <img src="/images/star.png" alt="" className="opacity-50" />
+                        <p className="text-[#6549F6]  text-lg  itemcount opacity-50">Generate</p>
+                     </div>
+                    
+                     
                   </div>
                </div>
 

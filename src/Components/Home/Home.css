@@ -20,6 +20,14 @@
   text-fill-color: transparent;
 }
 
+.bidButton {
+  background: linear-gradient(93.69deg, #7B61FF 0%, #00DAD9 107.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .homebuttonborder {
   border: 3px solid transparent;
   background-image: linear-gradient(#fff, #fff),

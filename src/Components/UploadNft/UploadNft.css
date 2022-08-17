@@ -2,6 +2,7 @@ label {
   width: 100%;
   box-sizing: border-box;
 }
+
 /* upload */
 
 #form-file-upload {
@@ -35,7 +36,7 @@ label {
   padding: 0.25rem;
   font-size: 1rem;
   border: none;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   background-color: transparent;
 }
 
@@ -52,4 +53,33 @@ label {
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  max-height: 0;
+  width: 100%;
+  -webkit-transition: max-height, 1s ease-in-out;
+  transition: max-height, 1s ease-in-out;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.hide {
+  max-height: 100vh;
+}
+
+.zoom-in-zoom-out {
+  animation: zoom-in-zoom-out 0.5s ease-out 1;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
 }
